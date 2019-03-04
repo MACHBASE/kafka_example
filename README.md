@@ -31,7 +31,7 @@ make all
 ```
 
 #### CREATE TAGDATA TABLE
-Using machsql, run the `CREATE TABLE` query writter in `query/create.sql`.
+Using machsql, run the `CREATE TABLE` query written in `query/create.sql`.
 
 At repository directory,
 ```bash

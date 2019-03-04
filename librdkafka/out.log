@@ -1,0 +1,96 @@
+using cache file config.cache
+checking for OS or distribution... [32mok(B[m (CentOS)
+checking for C compiler from CC env... [33mfailed(B[m
+checking for gcc (by command)... [32mok(B[m (cached)
+checking for C++ compiler from CXX env... [33mfailed(B[m
+checking for C++ compiler (g++)... [32mok(B[m (cached)
+checking executable ld... [32mok(B[m (cached)
+checking executable nm... [32mok(B[m (cached)
+checking executable objdump... [32mok(B[m (cached)
+checking executable strip... [32mok(B[m (cached)
+checking for pkgconfig (by command)... [32mok(B[m (cached)
+checking for install (by command)... [32mok(B[m (cached)
+checking for PIC (by compile)... [32mok(B[m (cached)
+checking for GNU-compatible linker options... [32mok(B[m (cached)
+checking for GNU linker-script ld flag... [32mok(B[m (cached)
+checking for __atomic_32 (by compile)... [32mok(B[m (cached)
+checking for __atomic_64 (by compile)... [32mok(B[m (cached)
+checking for socket (by compile)... [32mok(B[m (cached)
+parsing version '0x000b06ff'... [32mok(B[m (0.11.6)
+checking for librt (by pkg-config)... [33mfailed(B[m
+checking for librt (by compile)... [32mok(B[m (cached)
+checking for libpthread (by pkg-config)... [33mfailed(B[m
+checking for libpthread (by compile)... [32mok(B[m (cached)
+checking for libdl (by pkg-config)... [33mfailed(B[m
+checking for libdl (by compile)... [32mok(B[m (cached)
+checking for zlib (by pkg-config)... [32mok(B[m
+checking for zlib (by compile)... [32mok(B[m (cached)
+checking for libcrypto (by pkg-config)... [32mok(B[m
+checking for libcrypto (by compile)... [32mok(B[m (cached)
+checking for libm (by pkg-config)... [33mfailed(B[m
+checking for libm (by compile)... [32mok(B[m (cached)
+checking for liblz4 (by pkg-config)... [33mfailed(B[m
+checking for liblz4 (by compile)... [33mfailed(B[m (disable)
+checking for rapidjson (by compile)... [33mfailed(B[m (disable)
+checking for libssl (by pkg-config)... [32mok(B[m
+checking for libssl (by compile)... [32mok(B[m (cached)
+checking for libsasl2 (by pkg-config)... [33mfailed(B[m
+checking for libsasl2 (by compile)... [32mok(B[m (cached)
+checking for crc32chw (by compile)... [32mok(B[m (cached)
+checking for regex (by compile)... [32mok(B[m (cached)
+checking for strndup (by compile)... [32mok(B[m (cached)
+checking for strerror_r (by compile)... [32mok(B[m (cached)
+checking for pthread_setname_gnu (by compile)... [32mok(B[m (cached)
+checking for nm (by env NM)... [32mok(B[m (cached)
+checking for python (by command)... [32mok(B[m (cached)
+Generated Makefile.config
+Generated config.h
+
+Configuration summary:
+  prefix                   /usr/local
+  ARCH                     x86_64
+  CPU                      generic
+  GEN_PKG_CONFIG           y
+  ENABLE_DEVEL             n
+  ENABLE_VALGRIND          n
+  ENABLE_REFCNT_DEBUG      n
+  ENABLE_SHAREDPTR_DEBUG   n
+  ENABLE_LZ4_EXT           y
+  ENABLE_SSL               y
+  ENABLE_SASL              y
+  MKL_APP_NAME             librdkafka
+  MKL_APP_DESC_ONELINE     The Apache Kafka C/C++ library
+  MKL_DISTRO               CentOS
+  SOLIB_EXT                .so
+  CC                       gcc
+  CXX                      g++
+  LD                       ld
+  NM                       nm
+  OBJDUMP                  objdump
+  STRIP                    strip
+  CPPFLAGS                 -g -O2 -fPIC -Wall -Wsign-compare -Wfloat-equal -Wpointer-arith -Wcast-align
+  PKG_CONFIG               pkg-config
+  INSTALL                  install
+  LIB_LDFLAGS              -shared -Wl,-soname,$(LIBFILENAME)
+  LDFLAG_LINKERSCRIPT      -Wl,--version-script=
+  RDKAFKA_VERSION_STR      0.11.6
+  MKL_APP_VERSION          0.11.6
+  LIBS                     -lsasl2 -lssl -lcrypto   -lm -lcrypto   -lz   -ldl -lpthread -lrt
+  CFLAGS                        
+  CXXFLAGS                 -Wno-non-virtual-dtor
+  SYMDUMPER                $(NM) -D
+  exec_prefix              /usr/local
+  bindir                   /usr/local/bin
+  sbindir                  /usr/local/sbin
+  libexecdir               /usr/local/libexec
+  datadir                  /usr/local/share
+  sysconfdir               /usr/local/etc
+  sharedstatedir           /usr/local/com
+  localstatedir            /usr/local/var
+  libdir                   /usr/local/lib
+  includedir               /usr/local/include
+  infodir                  /usr/local/info
+  mandir                   /usr/local/man
+Generated config.cache
+
+Now type 'make' to build

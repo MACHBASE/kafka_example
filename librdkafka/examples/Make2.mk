@@ -1,0 +1,20 @@
+include $(MACHBASE_HOME)/install/machbase_env.mk
+include ../mklove/Makefile.base
+
+INCLUDES += $(INC_OPT)/$(MACHBASE_HOME)/include
+LD_LIBS += ../src/librdkafka.a  -lsasl2 -lssl -lcrypto  -lz
+CFLAGS += -I../src
+
+all:  kafka_to_machbase
+
+kafka_to_machbase: ../src/librdkafka.a kafka_to_machbase.o machbase_lib.o csvparser.o
+	$(LD_CC) $(LD_FLAGS) $(LD_OUT_OPT)$@ $< kafka_to_machbase.o machbase_lib.o csvparser.o $(LIB_OPT)machbasecli$(LIB_AFT)  $(LIBDIR_OPT)$(MACHBASE_HOME)/lib $(LD_LIBS)
+
+kafka_to_machbase.o: kafka_to_machbase.c
+	$(CC) $(INCLUDES) $(CPPFLAGS) $(CFLAGS) -c kafka_to_machbase.c -o $@ 
+
+machbase_lib.o: machbase_lib.c
+	$(CC) $(INCLUDES) $(CPPFLAGS) $(CFLAGS) -c machbase_lib.c -o $@ 
+
+csvparser.o: csvparser.c
+	$(CC) $(INCLUDES) $(CPPFLAGS) $(CFLAGS) -c csvparser.c -o $@ 

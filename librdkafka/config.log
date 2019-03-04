@@ -1,0 +1,55 @@
+# configure exec: ./configure 
+# On Mon Mar  4 13:53:35 KST 2019
+DBG: ccenv: WITH_CC:  --version failed: mklove/modules/configure.base: line 1183: --version: command not found
+DBG: Check ccenv (WITH_CC, action cont (originally cont)) failed: command ' --version' failed:
+mklove/modules/configure.base: line 1183: --version: command not found
+DBG: cxxenv: WITH_CXX:  --version failed: mklove/modules/configure.base: line 1183: --version: command not found
+DBG: Check cxxenv (WITH_CXX, action cont (originally cont)) failed: command ' --version' failed:
+mklove/modules/configure.base: line 1183: --version: command not found
+DBG: pkg-config check librt (): pkg-config --short-errors --cflags librt
+DBG: 'pkg-config --short-errors --cflags librt' failed: No package 'librt' found
+DBG: Check librt_PKGCONFIG (, action cont (originally cont)) failed: 'pkg-config --short-errors --cflags librt' failed:
+No package 'librt' found
+DBG: pkg-config check libpthread (): pkg-config --short-errors --cflags libpthread
+DBG: 'pkg-config --short-errors --cflags libpthread' failed: No package 'libpthread' found
+DBG: Check libpthread_PKGCONFIG (, action cont (originally cont)) failed: 'pkg-config --short-errors --cflags libpthread' failed:
+No package 'libpthread' found
+DBG: pkg-config check libdl (): pkg-config --short-errors --cflags libdl
+DBG: 'pkg-config --short-errors --cflags libdl' failed: No package 'libdl' found
+DBG: Check libdl_PKGCONFIG (, action cont (originally cont)) failed: 'pkg-config --short-errors --cflags libdl' failed:
+No package 'libdl' found
+DBG: pkg-config check zlib (): pkg-config --short-errors --cflags zlib
+DBG: pkg-config check libcrypto (): pkg-config --short-errors --cflags libcrypto
+DBG: pkg-config check libm (): pkg-config --short-errors --cflags libm
+DBG: 'pkg-config --short-errors --cflags libm' failed: No package 'libm' found
+DBG: Check libm_PKGCONFIG (, action cont (originally cont)) failed: 'pkg-config --short-errors --cflags libm' failed:
+No package 'libm' found
+DBG: pkg-config check liblz4 (): pkg-config --short-errors --cflags liblz4
+DBG: 'pkg-config --short-errors --cflags liblz4' failed: No package 'liblz4' found
+DBG: Check liblz4_PKGCONFIG (, action cont (originally cont)) failed: 'pkg-config --short-errors --cflags liblz4' failed:
+No package 'liblz4' found
+DBG: Compile check liblz4 (WITH_LZ4_EXT): gcc  -g -O2 -fPIC -Wall -Wsign-compare -Wfloat-equal -Wpointer-arith -Wcast-align -Wall -Werror _mkltmpjo4dVF.c -o _mkltmpjo4dVF.c.o   -llz4
+DBG: compile check for liblz4 (WITH_LZ4_EXT) failed: gcc  -g -O2 -fPIC -Wall -Wsign-compare -Wfloat-equal -Wpointer-arith -Wcast-align -Wall -Werror _mkltmpjo4dVF.c -o _mkltmpjo4dVF.c.o   -llz4: _mkltmpjo4dVF.c:1:22: fatal error: lz4frame.h: No such file or directory
+compilation terminated.
+DBG: Check liblz4 (WITH_LZ4_EXT, action disable (originally disable)) failed: compile check failed:
+CC: CC
+flags: -llz4
+gcc  -g -O2 -fPIC -Wall -Wsign-compare -Wfloat-equal -Wpointer-arith -Wcast-align -Wall -Werror _mkltmpjo4dVF.c -o _mkltmpjo4dVF.c.o   -llz4:
+_mkltmpjo4dVF.c:1:22: fatal error: lz4frame.h: No such file or directory
+compilation terminated.
+source: #include <lz4frame.h>
+DBG: Compile check rapidjson (WITH_RAPIDJSON): g++  -g -O2 -fPIC -Wall -Wsign-compare -Wfloat-equal -Wpointer-arith -Wcast-align -Wall -Werror _mkltmpP0tj1w.cpp -o _mkltmpP0tj1w.cpp.o   
+DBG: compile check for rapidjson (WITH_RAPIDJSON) failed: g++  -g -O2 -fPIC -Wall -Wsign-compare -Wfloat-equal -Wpointer-arith -Wcast-align -Wall -Werror _mkltmpP0tj1w.cpp -o _mkltmpP0tj1w.cpp.o   : _mkltmpP0tj1w.cpp:1:30: fatal error: rapidjson/schema.h: No such file or directory
+compilation terminated.
+DBG: Check rapidjson (WITH_RAPIDJSON, action disable (originally disable)) failed: compile check failed:
+CC: CXX
+flags: 
+g++  -g -O2 -fPIC -Wall -Wsign-compare -Wfloat-equal -Wpointer-arith -Wcast-align -Wall -Werror _mkltmpP0tj1w.cpp -o _mkltmpP0tj1w.cpp.o   :
+_mkltmpP0tj1w.cpp:1:30: fatal error: rapidjson/schema.h: No such file or directory
+compilation terminated.
+source: #include <rapidjson/schema.h>
+DBG: pkg-config check libssl (): pkg-config --short-errors --cflags libssl
+DBG: pkg-config check libsasl2 (): pkg-config --short-errors --cflags libsasl2
+DBG: 'pkg-config --short-errors --cflags libsasl2' failed: No package 'libsasl2' found
+DBG: Check libsasl2_PKGCONFIG (, action cont (originally cont)) failed: 'pkg-config --short-errors --cflags libsasl2' failed:
+No package 'libsasl2' found

@@ -12,6 +12,8 @@ export MACHBASE_PORT_NO=5656
 
 If you don't set those values, then default IP/Port will be affected. (127.0.0.1/5656)
 
+In addition to that, you should check if `$MACHBASE_HOME` is set.
+
 #### Install & startup Machbase
 Please follow install instructions via [documentation](https://doc.machbase.com/).
 (If you want to read Korean manual, please follow [here](http://krdoc.machbase.com).)
